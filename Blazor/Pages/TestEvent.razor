@@ -1,0 +1,32 @@
+﻿<div style="border:1px solid red;padding:10px;">
+    <button @onclick="Dec">-</button>
+    <span>@Counter++;</span>
+    <button @onclick="@(Inc)">+</button>
+    
+</div>
+@code {
+    int Counter { get; set; } = 1;
+
+    [Parameter]
+    public int Value { get; set; }
+
+    [Parameter]
+    public EventCallback<int> ValueChanged { get; set; }
+
+    public async Task Inc(MouseEventArgs e)
+    {
+        Value++;
+        await ValueChanged.InvokeAsync(Value);
+    }
+
+    public void Dec(MouseEventArgs e)
+    {
+        Counter--;
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        return base.OnAfterRenderAsync(firstRender);
+    }
+}

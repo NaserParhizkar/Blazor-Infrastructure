@@ -1,0 +1,39 @@
+﻿@page "/counter"
+@using BlazorApp1.Service
+@inherits SimplePage<Customer>
+@inject CustomerService service;
+<div>
+    <span>@this.Index</span>
+    <AutoComplete OpenOnFocus @bind-Value="this.Index">
+        <Template>
+            <CustomerSearch />
+        </Template>
+    </AutoComplete>
+</div>
+
+@code {
+
+    private WindowStatus Status { get; set; }
+    private Customer customer;
+    public void Testvalue(EventArgs e)
+    {
+
+        Index++;
+    }
+
+    public DateTime Birtdate { get; set; } = DateTime.Now;
+
+    private string LName { get; set; }
+
+    private int? SelectedCustomerId { get; set; } = 1;
+
+
+    public int Index { get; set; } = 5;
+
+    public string FName { get; set; } = "علی";
+
+    public Gender? Gender { get; set; } = BlazorApp1.Service.Gender.Male;
+
+    public Customer Customer { get; set; }
+
+}

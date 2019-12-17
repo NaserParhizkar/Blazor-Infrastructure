@@ -1,0 +1,804 @@
+body {
+    font-family: 'iranyekan';
+    font-size:12px;
+}
+/* Outlook theme*/
+fieldset.t-widget legend {
+    color: #d6d6d6;
+    margin-right: 40px;
+    font-size: 10px;
+}
+.t-small .t-numeric  {
+    font-size: 10px !important;
+}
+.t-widget {
+    border: transparent;
+    /*font-size: .75em; /* 12px base, if there are no inherited font-sizes (MVC Outlook) */
+    background-color: transparent;
+}
+    .t-widget.t-state-disabled .t-star {
+        color: #ececec;
+    }
+    .t-widget.t-state-disabled .t-select {
+        background-image:none;
+    }
+
+/* webkit solution */
+::-webkit-input-placeholder {
+    text-align: right;
+    direction: rtl;
+}
+/* mozilla solution */
+input:-moz-placeholder {
+    text-align: right;
+    direction: rtl;
+}
+
+/* .small .t-widget { font-size: .687em; } /* 11px base, if there are no inherited font-sizes (MVC Outlook) */
+html input[disabled], textarea[disabled] {
+    background-color: #ececec;
+    cursor: not-allowed;
+}
+.t-header,
+.t-grid-header {
+    background-image: none;
+    line-height: 30px;
+    text-align: center;
+    background-color: #424242;
+    border-color: #424242;
+}
+.t-grid-header {
+    color: white;
+}
+
+.t-widget.t-grid 
+{
+    font-size:14px;
+    border-radius:25px;
+}
+
+.t-datepicker .t-state-selected .t-input
+{
+    box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-color:#b6b6b6;
+}
+
+.t-datepicker .t-hover .t-input
+{
+    border-color:#b6b6b6;
+}
+.t-datepicker .t-input
+{
+    border-color:#c5c5c5;
+}
+.t-picker-wrap .t-select {
+    background-color: #424242;
+    border-color: #b2b2b2;
+    left:auto!important;
+}
+
+.t-panelbar .t-state-hover { background-image: none; }
+
+.t-icon { background-image: url('/Content/2011.1.315/Outlook/sprite.png'); }
+.t-editor .t-tool-icon { background-image: url('/Content/2011.1.315/Outlook/editor.png'); }
+
+.t-expand { background-position: 0 -160px; }
+.t-collapse { background-position: 0 -176px; }
+.t-rtl .t-expand { background-position: -64px -160px; }
+
+.t-plus, .t-plus-disabled { background-position: 0 -256px; }
+.t-minus, .t-minus-disabled { background-position: -16px -256px; }
+
+.t-rtl .t-plus, .t-rtl .t-plus-disabled { background-position: 0 -272px; }
+.t-rtl .t-minus, .t-rtl .t-minus-disabled { background-position: -16px -272px; }
+
+.t-arrow-up { background-position: -15px -159px; }
+.t-arrow-down {
+    background-position: -15px -174px;
+}
+
+.t-state-disabled .t-arrow-up { background-position: -32px -160px; }
+.t-state-disabled .t-arrow-down {
+    background-position: -15px -174px
+}
+.t-DBLable {
+    margin: 3px 2px 3px 2px;
+    padding-left:10px;
+}
+    .t-DBLable span {
+        display: block;
+        padding:1px 6px;
+        background-color: #4f7777;
+        height: 28px;
+        width: 100%;
+        color: lightgrey;
+        border-radius: 15px;
+        line-height:28px;
+        box-sizing:border-box;
+    }
+.t-state-hover .t-arrow-up {
+    background-position: -48px -160px;
+}
+/*.t-state-hover .t-arrow-down { background-position: -47px -176px; }*/
+
+.t-numerictextbox .t-arrow-up { background-position: -16px -162px; }
+.t-numerictextbox .t-arrow-down { background-position: -16px -178px; }
+
+.t-arrow-up-small { background-position: 0 -304px; }
+.t-arrow-down-small { background-position: -16px -304px; }
+
+.t-combobox .t-state-default {
+    border-color: #b2b2b2;
+}
+.t-numerictextbox .t-input {
+    border-color: #e5e2e2;
+    background-color: #e5e2e2;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 98%;
+    box-sizing: border-box;
+}
+.t-dropdown .t-dropdown-wrap {
+    background-color: #ececec;
+    background-image: inherit;
+    border-color: #a9a9a9;
+}
+.t-animation-container .t-popup {
+    background-color: #e9e9e9;
+    border: 1px solid #c5c5c5;
+}
+
+.t-numerictextbox .t-input:focus
+{
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, 0.3)!important;
+    border-color:#bdbdbd;
+}
+.t-numerictextbox.t-state-hover .t-input
+{
+    border-color:#b6b6b6;
+}
+
+
+.t-combobox .t-state-focused
+{
+    border-color:#bdbdbd;
+    /*transition:box-shadow 0.15s ease-out 0s;*/
+    box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+.t-dropdown .t-state-focused
+{
+    background-color:#bdb4af;
+    border-color:#b6b6b6;
+    transition:box-shadow 0.15s ease-out 0s;
+    box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.3)!important;
+    background-image:inherit;
+}
+
+.t-reset .t-state-selected
+{
+    border-radius:4px;
+    background-color:#63c6c6;
+}
+
+.t-arrow-first 
+{ 
+    background-position: 0 -192px; 
+}
+.t-arrow-prev 
+{ 
+    background-position: -18px -191px; 
+
+}
+.t-arrow-next 
+{ 
+    background-position: -35px -191px; 
+
+}
+.t-arrow-last 
+{ 
+    background-position: -48px -192px; 
+}
+
+.t-state-disabled .t-arrow-first { background-position: 0 -208px; }
+.t-state-disabled .t-arrow-prev {
+    background-position: -15px -209px
+}
+.t-state-disabled .t-arrow-next { background-position: -31px -208px; }
+.t-state-disabled .t-arrow-last { background-position: -48px -208px; }
+
+.t-state-hover .t-arrow-first { background-position: -3px -224px; }
+.t-state-hover .t-arrow-prev { background-position: -20px -224px; }
+.t-state-hover .t-arrow-next { background-position: -34px -224px; }
+.t-state-hover .t-arrow-last { background-position: -51px -224px; }
+
+.t-filter { background-position: 0 -240px; }
+.t-clear-filter { background-position: -16px -240px; }
+.t-window-titlebar .fa-times {
+    line-height: 26px;
+    width: 28px;
+    background-image: url(/areas/Satrap.FoodWeb/Content/Cash/TopIcons_Grey.png);
+    background-position: -979px -487px;
+    margin: 5px 2px 0 0;
+} 
+.t-refresh {
+    background-position: -32px -240px;
+}
+.t-icon-calendar { background-position: -50px -237px; }
+.t-icon-clock { background-position: -64px -336px; }
+
+.t-edit { background-position: 0 -332px; }
+.t-delete { background-position: -24px -333px; }
+.t-insert, .t-update {
+    padding: 2px 5px;
+    font-weight: bold;
+    height: 31px;
+    width: 55px;
+    display: inline-block;
+    text-align: center;
+}
+.t-cancel {
+    padding-top: 2px;
+    font-weight: bold;
+    height: 31px;
+    width: 55px;
+    display: inline-block;
+    text-align: center
+}
+.t-group-delete { background-position: 0 -288px; }
+
+.t-maximize { background-position: -16px -288px; }
+.t-restore { background-position: -32px -288px; }
+.t-close { background-position: -62px -290px; }
+
+.t-insert-top { background-position: 0 -320px; }
+.t-insert-middle { background-position: -16px -320px; }
+.t-insert-bottom { background-position: -32px -320px; }
+.t-add { background-position: -48px -320px; }
+.t-denied { background-position: -64px -320px; }
+
+.t-loading,
+.t-widget .t-loading 
+{ 
+    background: transparent url('/Content/2011.1.315/Outlook/loading.gif') no-repeat 0 0;
+}
+.t-grid .t-loading
+{
+    background: transparent url('/Content/2011.1.315/Outlook/loading-image.svg') no-repeat 0 0;
+    width:100%;
+    position:absolute;
+    left:0;
+    background-position:center center;
+    z-index:500;
+}
+.t-grid .t-loading div
+{
+    background-color:#fff;
+    opacity:0.3;
+    width:100%;
+    height:100%;
+}
+.t-grid a
+{
+    outline:none;
+}
+.t-widget.t-grid,
+.t-link:link,
+.t-link:active,
+.t-link:visited,
+.t-popup {
+    color:white;
+}
+
+.t-group,
+.t-content,
+.t-editable-area
+{
+    background-color: #fff;
+}
+
+.t-alt{
+    background-color:#585858;
+}
+
+.t-colorpicker .t-arrow-down
+{
+    border-color: #5d8cc9;
+}
+
+.t-separator
+{
+    border-color: #cfdef4;
+    background-color: #7e98bc;
+}
+
+.t-state-default
+{
+    border-color: #5d8cc9;
+}
+
+.t-active-filter
+{
+    background-color: #b6cef2;
+}
+
+.t-state-active {
+    background-color: #262626 !important;
+}
+.t-widget.t-message {
+    border-radius: 20px;
+    width: 250PX;
+    top: 5PX;
+    position: fixed;
+    z-index: 60000;
+    overflow: hidden;
+    background-color: #457e7e;
+    direction: rtl;
+    left: 20px;
+    color: #dfe3e3;
+}
+#outMessage .t-title {
+    position: absolute;
+    left: 207px;
+    top:5px;
+}
+.t-widget.t-message .t-close {
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    background-position: -65px -289px;
+    background-image: url(/areas/Satrap.FoodWeb/Content/Cash/TopIcons_Grey.png);
+    background-position: -979px -487px;
+    cursor: pointer;
+}
+        .t-widget.t-message .t-close.-state-hover {
+            background-color: #f7c3a6;
+            border-color: #f85a00;
+        }
+    .t-grid .t-state-selected {
+            background-color: #5e8f8f;
+        }
+.t-pager .t-numeric .t-state-active {
+    background-color: #626262;
+    color: #63c7c7;
+}
+
+
+.t-pager >.t-link
+{
+    border-color:#626262;
+}
+.t-pager .t-link .t-icon{
+    margin-top:5px;
+    margin-right:5px;
+    width:12px;
+    height:14px;
+}
+
+.t-state-error
+{
+    border-style: ridge;
+    border-color: #f00;
+    background-color: #ffc0cb;
+}
+
+.t-button {
+    background-color: #008f8f;
+    color: white;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 3px 4px;
+    border:none;
+}
+    .t-button:not([disabled="disabled"]):hover {
+        box-shadow: 0px 0px 8px 1px #c5c5c5;
+    }
+
+.t-button.t-state-selected
+{
+    box-shadow:0 0 3px 0;
+    background-color:#ff5e03;
+    border-color:#8d8079;
+    color:#fff;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.4) 0px, rgba(255, 255, 255, 0))
+}
+
+.t-button[disabled="disabled"]
+{
+    background-color:#a8a8a8;
+    box-shadow:none;
+    color:#e6e6e6;
+    cursor:not-allowed;
+}
+
+
+.t-state-disabled,
+.t-state-disabled:hover,
+.t-state-disabled .t-link,
+.t-state-disabled .t-button {
+    color: #999;
+    background-image: none;
+}
+
+.t-header .t-state-disabled,
+.t-header .t-state-disabled .t-link {
+    color: #577aac;
+    border-color: #7da5e0;
+}
+
+.t-grid tr td
+{
+    font-family:iranyekan;
+    text-align:center;
+    padding:8px 0;
+    font-size: 13px;
+}
+
+.t-grouping-row td
+{
+    background: #fff url('/Content/2011.1.315/Outlook/sprite.png') repeat-x 0 -48px;
+}
+
+.t-footer-template td
+{
+    background-color: #d6e5f3;
+    border-color: #567db0 #d6e5f3 #fff;
+}
+
+.t-group-footer td
+{
+    background-color: #d6e5f3;
+    border-color: #567db0;
+}
+
+.t-grid-footer,
+.t-grid-footer-wrap table
+{
+    background-color: #d6e5f3;
+    border-color: #567db0;
+}
+
+.t-grouping-header .t-group-indicator
+{
+    color: #333;
+    border-color: #aaa;
+}
+
+.t-grouping-dropclue
+{
+    background: url('/Content/2011.1.315/Outlook/sprite.png') no-repeat -48px -288px;
+}
+
+.t-grouping-row .t-group-cell,
+.t-grouping-row p
+{
+    background: #fff;
+}
+
+.t-treeview .t-drop-clue
+{
+    background-image: url('/Content/2011.1.315/Outlook/sprite.png');
+    background-position: 0 -358px;
+}
+
+.t-treeview .t-state-selected
+{
+    border-color: #002d96;
+}
+
+.t-panelbar .t-link,
+.t-panelbar .t-group,
+.t-panelbar .t-content
+{
+    border-color: #c5c5c5;
+}
+
+.t-calendar th
+{
+    border-color: #89aee5;
+}
+
+.t-other-month .t-link
+{
+    color: #777;
+}
+
+.t-treeview-lines .t-top,
+.t-treeview-lines .t-mid,
+.t-treeview-lines .t-bot
+{
+    background-image: url('/Content/2011.1.315/Outlook/treeview-nodes.png');
+}
+
+.t-rtl .t-treeview-lines .t-top,
+.t-rtl .t-treeview-lines .t-mid,
+.t-rtl .t-treeview-lines .t-bot
+{
+    background-image: url('/Content/2011.1.315/Outlook/treeview-nodes-rtl.png');
+}
+
+.t-treeview-lines .t-item { background-image: url('/Content/2011.1.315/Outlook/treeview-line.png'); }
+.t-treeview-lines .t-last { background-image: none; }
+
+.t-editor-button .t-state-hover
+{
+    border-color: #dae8fa #668dcf #668dcf #dae8fa;
+    background-color: #93b5e7;
+}
+
+.t-editor-button .t-state-active
+{
+    border-color: #5781c9 #a3c1ea #a3c1ea #5781c9;
+    background-color: #7da5e0;
+}
+
+/*Slider*/
+
+.t-slider .t-draghandle
+{
+	background-image:url('/Content/2011.1.315/Outlook/sprite.png');
+	color:#5d8cc9;
+}
+
+.t-slider-track
+{
+	border-color:#7b9ecc;
+}
+
+.t-slider-horizontal .t-slider-track,
+.t-slider-horizontal .t-slider-selection
+{
+	background-image:url('/Content/2011.1.315/Outlook/sprite.png');
+}
+
+.t-slider-vertical .t-slider-track,
+.t-slider-vertical .t-slider-selection
+{
+	background-image:url('/Content/2011.1.315/Outlook/sprite-vertical.png');
+}
+
+.t-slider-horizontal .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-hs-both.gif'); }
+.t-slider-horizontal .t-slider-topleft .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-hs-top.gif'); }
+.t-slider-horizontal .t-slider-bottomright .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-hs-bottom.gif'); }
+
+.t-slider-horizontal .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-h-both.gif'); }
+.t-slider-horizontal .t-slider-topleft .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-h-top.gif'); }
+.t-slider-horizontal .t-slider-bottomright .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-h-bottom.gif'); }
+
+.t-slider-vertical .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-vs-both.gif'); }
+.t-slider-vertical .t-slider-topleft .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-vs-left.gif'); }
+.t-slider-vertical .t-slider-bottomright .t-tick { background-image:url('/Content/2011.1.315/Outlook/slider-vs-right.gif'); }
+
+.t-slider-vertical .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-v-both.gif'); }
+.t-slider-vertical .t-slider-topleft .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-v-left.gif'); }
+.t-slider-vertical .t-slider-bottomright .t-tick-large { background-image:url('/Content/2011.1.315/Outlook/slider-v-right.gif'); }
+
+/*Tooltip*/
+
+.t-tooltip
+{
+    border-color:#000;
+	background:#ffffe1;
+}
+
+.t-callout
+{
+	background-image:url('/Content/2011.1.315/Outlook/sprite.png');
+}
+
+.t-splitbar-vertical,
+.t-splitbar-horizontal
+{
+    background-color: #e9e9e9;
+    border-color: #1c1c1c;
+}
+.t-splitbar-horizontal:hover
+{
+    background-color: #bcb4b0;
+    border-color: #b6b6b6;
+}
+
+.t-splitbar-vertical,
+.t-ghost-splitbar-vertical
+{
+    background-image: url('/Content/2011.1.315/Outlook/sprite.png');
+}
+
+.t-ghost-splitbar-horizontal
+{
+    background-color:#ff5e03;
+    background-image: linear-gradient(to right, 
+        rgba(255, 255, 255, 0.4),     
+        rgba(255, 255, 255, 0)   
+    );
+}
+
+/* Upload */
+
+.t-dropzone-active,
+.t-upload-files
+{
+    border-color: #7f9eba;
+}
+
+.t-dropzone-hovered,
+.t-upload-files
+{
+    background-color: #d6e5f3;    
+}
+
+.t-dropzone em
+{
+    color: #6c7a8c;
+}
+
+.t-progress,
+.t-progress-status
+{
+    background-image: url('/Content/2011.1.315/Outlook/sprite.png');
+}
+
+.t-progress
+{
+    background-position: 0 -466px;
+    border-color: #7699c5 #83a4ce #81a5d6;
+}
+
+.t-progress-status
+{
+    background-position: 0 -472px;
+    border-color: #99bbea transparent #40689e;
+}
+
+/* ImageBrowser */
+
+.t-imagebrowser .t-content
+{
+    background: #c3dafa;
+}
+
+.t-breadcrumbs .t-link:hover
+{
+    color: #003db2;
+}
+
+.t-breadcrumbs .t-first,
+.t-breadcrumbs .t-first:hover,
+.t-search-wrap label
+{
+    color: #6c7a8c;
+}
+
+.t-tiles-toolbar
+{
+    border-color: #828282;
+    background: #7da5e0 url('/Content/2011.1.315/Outlook/sprite.png') repeat-x 0 -752px;
+}
+.t-HelpWindow > .t-header {
+    height: 35px;
+    border-radius: 25px 25px 0 0;
+    background-image: none;
+    background-color: #424242;
+
+}
+    .t-HelpWindow >.t-header a {
+        position:absolute;
+        left:4px;
+        right:auto;
+        top:3px
+    }
+    .t-HelpWindow > .t-header .t-close {
+        width: 27px;
+        height: 27px;
+        display: inline-block;
+        background-image: url(/areas/Satrap.FoodWeb/Content/Cash/TopIcons_Grey.png);
+        background-position: -977px -485px
+    }
+
+
+.t-tiles {
+    border-color: #7f9eba;
+    background: #fff;
+}
+
+.t-tile
+{
+    border-color: #fff;
+    background:0 100px repeat-x url('/Content/2011.1.315/Outlook/imagebrowser.png');
+}
+
+.t-tiles li.t-state-hover
+{
+    border-color: #e0b224;
+    background-position: 0 0;
+}
+
+.t-tiles li.t-state-selected
+{
+    border-color: #df8b13;
+    background-position: 0 -100px;
+}
+
+.t-tile .t-folder
+{
+    background-image:url('/Content/2011.1.315/Outlook/imagebrowser.png');
+}
+
+.t-tile em,
+.t-tile .t-filesize
+{
+    color: #6c7a8c;
+}
+
+.t-tile-empty strong
+{
+    color: #8bb2e2;
+}
+
+.t-HelpWindow {
+    display: none;
+    position: absolute;
+    z-index: 10000000;
+    background-color: #777777;
+    border-radius: 25px;
+}
+
+.t-grid-addTab
+{
+    width:34px;
+    text-align:center;
+    line-height:1.4em;
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('/Content/assets/fonts/eot/iranyekanwebbold.eot');
+    src: url('/Content/assets/fonts/eot/iranyekanwebbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+  }
+.m-loading {
+    position: absolute;
+    background: transparent url('/Content/2011.1.315/Outlook/loading-image.svg') no-repeat 0 0;
+    left:0;
+    z-index:15000;
+    background-position:center center;
+}
