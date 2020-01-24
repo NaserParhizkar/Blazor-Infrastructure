@@ -1,5 +1,40 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+@using Microsoft.AspNetCore.Blazor.Components
 
-Welcome to your new app.
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="@IncrementCount">
+    Click me
+</button>
+
+<input type="number" @bind="@increment" />
+
+<button class="btn btn-primary" @onclick="@AutoIncrement">
+    Auto Increment
+</button> 
+
+@code{
+    int currentCount = 0;
+    int increment = 1;
+
+    void IncrementCount()
+    {
+        currentCount += increment;
+    }
+
+    void AutoIncrement()
+    {
+        var timer = new System.Threading.Timer((_) => 
+        {
+            IncrementCount();
+            InvokeAsync(() => StateHasChanged());
+        },
+        null,
+        System.TimeSpan.FromMilliseconds(1),
+        System.TimeSpan.FromMilliseconds(1));
+    }
+}
+
